@@ -8,6 +8,8 @@ layout: default
 <h2> Carnivore</h2>
 <ul> 
 	{% for dino in site.pages %}
+		{% if dino.category == "carnivore" %}
 		<li>{{dino.name}}</li>
+		{% endif %}
 	{% endfor %}
 </ul>
