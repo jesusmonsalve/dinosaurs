@@ -1,11 +1,24 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Dinosaurs</title>
-<link href="css/general.css" rel="stylesheet">
-</head>
+---
+layout: default
+---
 
-<body>
-</body>
-</html>
+<h1> Dinosaurs</h1>
+<p> Dinosaurs are super Rockin'</p>
+
+<h2> Carnivore</h2>
+<ul> 
+	{% for dino in site.pages %}
+		{% if dino.category == "carnivore" %}
+		<li>{{dino.name}}</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+<h2> herbivore</h2>
+<ul> 
+	{% for dino in site.pages %}
+		{% if dino.category == "herbivore" %}
+		<li>{{dino.name}}</li>
+		{% endif %}
+	{% endfor %}
+</ul>
