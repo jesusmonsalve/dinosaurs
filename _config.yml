@@ -1,7 +1,0 @@
-markdown: redcarpet
-<<<<<<< HEAD
-baseurl: /dinosaurs
-exclude: ['README.md']
-=======
-baseurl: /dinosaurs 
->>>>>>> 5a7b60b37ea8e6adfc800731afaa26ee3343512e
